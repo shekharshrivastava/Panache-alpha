@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.app.ssoft.panache.View.OTPActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:src="@drawable/back_btn" />
+
+            <TextView
+                android:id="@+id/otp_toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:text="OTP"
+                android:textSize="@dimen/sp_18" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/OTPTitleTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_30"
+            android:gravity="center"
+            android:text="@string/otp_verification_message"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/mobile_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_20"
+                android:gravity="center"
+                android:text="+91 - 9875643210"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/edit_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_toRightOf="@+id/mobile_tv"
+                android:src="@drawable/edit_pencil" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/otp_et_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_30"
+            android:text="ONE TIME PASSWORD"
+            android:textSize="15sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_10"
+            android:gravity="center"
+            android:inputType="numberPassword"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:text="afadfdfdfdgdg"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/timer_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|right"
+            android:layout_marginRight="@dimen/dp_10"
+            android:text="00:30"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/otp_error_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_30"
+            android:gravity="center"
+            android:text="Did'nt receive the OTP?"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/resend_code_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_5"
+            android:gravity="center"
+            android:text="RESEND OTP"
+            android:textSize="12sp" />
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginTop="30dp"
+            android:visibility="gone" />
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="30dp"
+            android:background="@color/login_btn_color"
+            android:text="SUBMIT"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

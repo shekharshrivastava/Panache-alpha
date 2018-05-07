@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "300674981878",
+    "firebase_url": "https://panache-c4b0d.firebaseio.com",
+    "project_id": "panache-c4b0d",
+    "storage_bucket": "panache-c4b0d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300674981878:android:09696d126279adb0",
+        "android_client_info": {
+          "package_name": "com.app.ssoft.panache"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "300674981878-qsjev2ierj14q4rgs7tegibg1tm8oiol.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.ssoft.panache",
+            "certificate_hash": "3ecdaa4d85409d36f0ec05641c54f1550e8eabd6"
+          }
+        },
+        {
+          "client_id": "300674981878-5p73rtasmvh4itav582mbclhvn94500v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcSqccrCm3Z_j7cJljVr-Zh3kawimRPKY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "300674981878-5p73rtasmvh4itav582mbclhvn94500v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

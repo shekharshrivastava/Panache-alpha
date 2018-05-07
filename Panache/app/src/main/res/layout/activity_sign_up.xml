@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.app.ssoft.panache.View.SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:src="@drawable/back_btn" />
+
+            <TextView
+                android:id="@+id/signup_toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:text="SIGN UP"
+                android:textSize="@dimen/sp_18" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/email_id_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_10"
+            android:hint="@string/email_address"
+            android:inputType="textEmailAddress"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/password_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:maxLength="6"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/full_name_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_10"
+            android:hint="Full Name*"
+            android:inputType="textPersonName"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginTop="15dp"
+                android:layout_weight="0.3"
+                app:ccpDialog_keyboardAutoPopup="false"
+                app:ccp_autoDetectCountry="true"
+                app:ccp_hintExampleNumber="true"
+                app:ccp_textSize="15sp" />
+
+            <EditText
+                android:id="@+id/mob_num_et"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_weight="0.7"
+                android:hint="Mobile Number*"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <co.ceryle.radiorealbutton.RadioRealButtonGroup
+            android:id="@+id/genderRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_20"
+            app:rrbg_dividerColor="#000"
+            app:rrbg_dividerSize="1dp"
+            app:rrbg_radius="20dp"
+            app:rrbg_selectorColor="@color/colorAccent"
+            app:rrbg_selectorSize="6dp">
+
+            <co.ceryle.radiorealbutton.RadioRealButton
+                android:id="@+id/genderMaleRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:rrb_drawableHeight="24dp"
+                app:rrb_drawablePadding="2dp"
+                app:rrb_drawableWidth="24dp"
+                app:rrb_text="MALE"
+                app:rrb_textColor="#000"
+                app:rrb_textSize="@dimen/subheading_12sp" />
+
+            <co.ceryle.radiorealbutton.RadioRealButton
+                android:id="@+id/genderFemaleRB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:rrb_drawableGravity="right"
+                app:rrb_drawableHeight="24dp"
+                app:rrb_drawablePadding="2dp"
+                app:rrb_drawableWidth="24dp"
+                app:rrb_text="FEMALE"
+                app:rrb_textColor="#000"
+                app:rrb_textSize="@dimen/subheading_12sp" />
+        </co.ceryle.radiorealbutton.RadioRealButtonGroup>
+
+
+        <Button
+            android:id="@+id/sign_up_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="30dp"
+            android:background="@color/login_btn_color"
+            android:text="@string/sign_up"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>
